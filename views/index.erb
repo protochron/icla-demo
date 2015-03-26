@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="<%= url('third_party/bootstrap/dist/css/bootstrap.min.css') %>">
+    <link rel="stylesheet" href="<%= url('css/main.css') %>">
+  </head>
+  <body>
+    <script src="<%= url('third_party/jquery/dist/jquery.min.js') %>"></script>
+    <script src="<%= url('third_party/bootstrap/dist/js/bootstrap.min.js') %>"></script>
+    <script src="<%= url('third_party/underscore/underscore-min.js') %>"></script>
+    <script src="<%= url('third_party/react/react.js') %>"></script>
+
+    <div>
+      <form class="navbar-form navbar-left" action='/' method="POST">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <label for='name'>Name</label>
+            <input class="form-control" type='text' name='name' />
+          </li>
+
+          <li class="list-group-item">
+            <label for='pname'>Public Name (optional)</label>
+            <input class="form-control" type='text' name='public_name' />
+          </li>
+
+          <li class="list-group-item">
+            <label for='address'>Mailing Address</label>
+            <input class="form-control" type='text' name='address' />
+          </li>
+
+          <li class="list-group-item">
+            <label for='country'>Country</label>
+            <input class="form-control" type='text' name='country' />
+          </li>
+
+          <li class="list-group-item">
+            <label for='telephone'>Telephone</label>
+            <input class="form-control" type='text' name='telephone' />
+          </li>
+
+          <li class="list-group-item">
+            <label for='email'>Email</label>
+            <input class="form-control" type='text' name='email' />
+          </li>
+
+          <li class="list-group-item">
+            <label for='apache_id'>Preferred Apache ID</label>
+            <input class="form-control" type='text' name='apache_id' />
+          </li>
+
+          <li class="list-group-item">
+            <label for='project'>Notify Project</label>
+            <input class="form-control" type='text' name='project' />
+          </li>
+
+          <li class="list-group-item">
+            <input type='submit' value='Submit'/>
+          </li>
+        </ul>
+
+      </form>
+    </div>
+  </body>
+</html>
