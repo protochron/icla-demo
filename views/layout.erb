@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="<%= url("third_party/bootstrap/dist/css/bootstrap.min.css") %>">
+    <link rel="stylesheet" href="<%= url("css/main.css") %>">
+  </head>
+  <body>
+    <script src="<%= url("third_party/jquery/dist/jquery.min.js") %>"></script>
+    <script src="<%= url("third_party/bootstrap/dist/js/bootstrap.min.js") %>"></script>
+    <script src="<%= url("third_party/underscore/underscore-min.js") %>"></script>
+    <script src="<%= url("third_party/react/react.js") %>"></script>
+    <%= yield %>
+  </body>
+</html>

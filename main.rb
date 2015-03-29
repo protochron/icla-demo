@@ -5,4 +5,6 @@ get '/' do
 end
 
 post '/' do
+  erb :response
 end
+

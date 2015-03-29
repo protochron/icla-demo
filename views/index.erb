@@ -1,63 +1,159 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="<%= url('third_party/bootstrap/dist/css/bootstrap.min.css') %>">
-    <link rel="stylesheet" href="<%= url('css/main.css') %>">
-  </head>
-  <body>
-    <script src="<%= url('third_party/jquery/dist/jquery.min.js') %>"></script>
-    <script src="<%= url('third_party/bootstrap/dist/js/bootstrap.min.js') %>"></script>
-    <script src="<%= url('third_party/underscore/underscore-min.js') %>"></script>
-    <script src="<%= url('third_party/react/react.js') %>"></script>
-
-    <div>
-      <form class="navbar-form navbar-left" action='/' method="POST">
-        <ul class="list-group">
-          <li class="list-group-item">
-            <label for='name'>Name</label>
-            <input class="form-control" type='text' name='name' />
-          </li>
-
-          <li class="list-group-item">
-            <label for='pname'>Public Name (optional)</label>
-            <input class="form-control" type='text' name='public_name' />
-          </li>
-
-          <li class="list-group-item">
-            <label for='address'>Mailing Address</label>
-            <input class="form-control" type='text' name='address' />
-          </li>
-
-          <li class="list-group-item">
-            <label for='country'>Country</label>
-            <input class="form-control" type='text' name='country' />
-          </li>
-
-          <li class="list-group-item">
-            <label for='telephone'>Telephone</label>
-            <input class="form-control" type='text' name='telephone' />
-          </li>
-
-          <li class="list-group-item">
-            <label for='email'>Email</label>
-            <input class="form-control" type='text' name='email' />
-          </li>
-
-          <li class="list-group-item">
-            <label for='apache_id'>Preferred Apache ID</label>
-            <input class="form-control" type='text' name='apache_id' />
-          </li>
-
-          <li class="list-group-item">
-            <label for='project'>Notify Project</label>
-            <input class="form-control" type='text' name='project' />
-          </li>
-
-          <li class="list-group-item">
-            <input type='submit' value='Submit'/>
-          </li>
-        </ul>
-
-      </form>
+    <div class="container">
+      <h1 class="text-center">Apache Software Foundation ICLA</h1>
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <p class="text-left">
+        You accept and agree to the following terms and conditions for Your
+        present and future Contributions submitted to the Foundation. In
+        return, the Foundation shall not use Your Contributions in a way that
+        is contrary to the public benefit or inconsistent with its nonprofit
+        status and bylaws in effect at the time of the Contribution. Except
+        for the license granted herein to the Foundation and recipients of
+        software distributed by the Foundation, You reserve all right, title,
+        and interest in and to Your Contributions.
+        </p>
+        <ol>1. Definitions.
+          <p>
+            "You" (or "Your") shall mean the copyright owner or legal entity
+            authorized by the copyright owner that is making this Agreement
+            with the Foundation. For legal entities, the entity making a
+            Contribution and all other entities that control, are controlled
+            by, or are under common control with that entity are considered to
+            be a single Contributor. For the purposes of this definition,
+            "control" means (i) the power, direct or indirect, to cause the
+            direction or management of such entity, whether by contract or
+            otherwise, or (ii) ownership of fifty percent (50%) or more of the
+            outstanding shares, or (iii) beneficial ownership of such entity.
+          </p>
+          <p>
+            "Contribution" shall mean any original work of authorship,
+            including any modifications or additions to an existing work, that
+            is intentionally submitted by You to the Foundation for inclusion
+            in, or documentation of, any of the products owned or managed by
+            the Foundation (the "Work"). For the purposes of this definition,
+            "submitted" means any form of electronic, verbal, or written
+            communication sent to the Foundation or its representatives,
+            including but not limited to communication on electronic mailing
+            lists, source code control systems, and issue tracking systems that
+            are managed by, or on behalf of, the Foundation for the purpose of
+            discussing and improving the Work, but excluding communication that
+            is conspicuously marked or otherwise designated in writing by You
+            as "Not a Contribution."
+          </p>
+        </ol>
+        <ol>2. Grant of Copyright License. Subject to the terms and conditions of
+        this Agreement, You hereby grant to the Foundation and to
+        recipients of software distributed by the Foundation a perpetual,
+        worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+        copyright license to reproduce, prepare derivative works of,
+        publicly display, publicly perform, sublicense, and distribute Your
+        Contributions and such derivative works.</ol>
+        <ol>3. Grant of Patent License. Subject to the terms and conditions of
+        this Agreement, You hereby grant to the Foundation and to
+        recipients of software distributed by the Foundation a perpetual,
+        worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+        (except as stated in this section) patent license to make, have
+        made, use, offer to sell, sell, import, and otherwise transfer the
+        Work, where such license applies only to those patent claims
+        licensable by You that are necessarily infringed by Your
+        Contribution(s) alone or by combination of Your Contribution(s)
+        with the Work to which such Contribution(s) was submitted. If any
+        entity institutes patent litigation against You or any other entity
+        (including a cross-claim or counterclaim in a lawsuit) alleging
+        that your Contribution, or the Work to which you have contributed,
+        constitutes direct or contributory patent infringement, then any
+        patent licenses granted to that entity under this Agreement for
+        that Contribution or Work shall terminate as of the date such
+        litigation is filed.</ol>
+        <ol>4. You represent that you are legally entitled to grant the above
+        license. If your employer(s) has rights to intellectual property
+        that you create that includes your Contributions, you represent
+        that you have received permission to make Contributions on behalf
+        of that employer, that your employer has waived such rights for
+        your Contributions to the Foundation, or that your employer has
+        executed a separate Corporate CLA with the Foundation.  </ol>
+        <ol>5. You represent that each of Your Contributions is Your original
+        creation (see section 7 for submissions on behalf of others).  You
+        represent that Your Contribution submissions include complete
+        details of any third-party license or other restriction (including,
+        but not limited to, related patents and trademarks) of which you
+        are personally aware and which are associated with any part of Your
+        Contributions.</ol>
+        <ol>6. You are not expected to provide support for Your Contributions,
+        except to the extent You desire to provide support. You may provide
+        support for free, for a fee, or not at all. Unless required by
+        applicable law or agreed to in writing, You provide Your
+        Contributions on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
+        OF ANY KIND, either express or implied, including, without
+        limitation, any warranties or conditions of TITLE, NON-
+        INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE.</ol>
+        <ol>7. Should You wish to submit work that is not Your original creation,
+        You may submit it to the Foundation separately from any
+        Contribution, identifying the complete details of its source and of
+        any license or other restriction (including, but not limited to,
+        related patents, trademarks, and license agreements) of which you
+        are personally aware, and conspicuously marking the work as
+        "Submitted on behalf of a third-party: [named here]".</ol>
+        <ol>8. You agree to notify the Foundation of any facts or circumstances of
+        which you become aware that would make these representations
+        inaccurate in any respect.</ol>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-2">
+          <form class="form-horizontal col-md-8" action="/" method="POST">
+            <div class="form-group">
+              <label for="name" class="col-sm-2 control-label">Name</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" name="name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="pname" class="col-sm-2 control-label">Public Name (optional)</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" name="public_name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address" class="col-sm-2 control-label">Mailing Address</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows=3 type="text" name="address"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="country" class="col-sm-2 control-label">Country</label>
+              <div class="col-sm-10">
+                <%= erb :countries %>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="telephone" class="col-sm-2 control-label">Telephone</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" name="telephone">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email"class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" name="email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="apache_id" class="col-sm-2 control-label">Preferred Apache ID</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" name="apache_id" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="project" class="col-sm-2 control-label">Notify Project</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" name="project" />
+              </div>
+            </div>
+            <div class="text-center">
+              <input class="btn" type="submit" value="Submit"/>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-  </body>
-</html>
