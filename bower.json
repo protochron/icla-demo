@@ -1,5 +1,5 @@
 {
-  "name": "whimsy-new",
+  "name": "icla-demo",
   "version": "0.0.1",
   "authors": [
     "Dan Norris <dnorris@apache.org>"
@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "jquery": "~2.1.3",
-    "react": "~0.12.2",
+    "react": "~0.13.1",
     "bootstrap": "~3.3.2",
     "underscore": "~1.8.2"
   }
