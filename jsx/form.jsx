@@ -350,7 +350,7 @@ var IclaForm = React.createClass({
           </div>
         </div>
         <div className="form-group">
-          <label className="col-sm-2 control-label">Notify Project</label>
+          <label className="col-sm-2 control-label">Notify Project (needs to be a dropdown)</label>
           <div className="col-sm-10">
             <input className="form-control" type="text" name="notifyProject" onChange={this.handleNotifyProjectChange}/>
           </div>
@@ -363,7 +363,17 @@ var IclaForm = React.createClass({
   }
 });
 
+var FormContainer = React.createClass({
+  render: function() {
+    switch (this.state.step) {
+      case 1:
+        return <IclaForm />;
+      case 2:
+        return <IclaForm showAgreement='false' />;
+    }
+  }
+});
+
 React.render(
-  <IclaForm />,
   document.getElementById('form-mount')
 );
