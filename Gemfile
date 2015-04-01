@@ -4,6 +4,7 @@ gem 'sinatra'
 gem 'multi_json'
 gem 'oj'
 gem 'puma'
+gem 'sqlite3'
 
 group :development do
   gem 'rspec', :require => false

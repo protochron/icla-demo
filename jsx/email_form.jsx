@@ -20,7 +20,7 @@ var MainForm = React.createClass({
           </div>
           <div className="row">
             <div className="col-md-10 col-md-offset-2">
-              <form className="form-horizontal col-md-8" onSubmit={this.handleSubmit} >
+              <form className="form-horizontal col-md-8" onSubmit={this.handleSubmit} method="POST">
                 <div className="form-group">
                   <label className="col-sm-2 control-label">Email</label>
                   <div className="col-sm-10">
@@ -49,6 +49,7 @@ var EmailForm = React.createClass({
     this.setState({email: emailComponent.email, submitted: true});
   },
 
+  // TODO: Make the in-browser part work
   render: function() {
     if (!this.state.submitted) {
       return (

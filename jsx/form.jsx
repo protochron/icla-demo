@@ -290,9 +290,6 @@ var IclaForm = React.createClass({
   handleTelephoneChange: function(event) {
     this.setState({telephone: event.target.value});
   },
-  handleEmailChange: function(event) {
-    this.setState({email: event.target.value});
-  },
   handleNotifyProjectChange: function(event) {
     this.setState({notifyProject: event.target.value});
   },
@@ -338,12 +335,6 @@ var IclaForm = React.createClass({
           </div>
         </div>
         <div className="form-group">
-          <label className="col-sm-2 control-label">Email</label>
-          <div className="col-sm-10">
-            <input className="form-control" type="text" name="email" onChange={this.handleEmailChange} />
-          </div>
-        </div>
-        <div className="form-group">
           <label className="col-sm-2 control-label">Preferred Apache ID</label>
           <div className="col-sm-10">
             <input className="form-control" type="text" name="apacheId" onChange={this.handleApacheIDChange}/>
@@ -355,6 +346,15 @@ var IclaForm = React.createClass({
             <input className="form-control" type="text" name="notifyProject" onChange={this.handleNotifyProjectChange}/>
           </div>
         </div>
+        <div className="form-group">
+          <div className="col-sm-10">
+            <div className="checkbox">
+              <label>
+                <input className="checkbox" type="checkbox" name="agree" /> By filling out this form, I acknowlege that I agree to the terms and conditions stipulated above. (Legal needs to come up with a real way to phrase this)
+              </label>
+            </div>
+          </div>
+        </div>
         <div className="text-center">
           <input className="btn" type="submit" value="Submit"/>
         </div>
@@ -363,17 +363,7 @@ var IclaForm = React.createClass({
   }
 });
 
-var FormContainer = React.createClass({
-  render: function() {
-    switch (this.state.step) {
-      case 1:
-        return <IclaForm />;
-      case 2:
-        return <IclaForm showAgreement='false' />;
-    }
-  }
-});
-
 React.render(
+  <IclaForm />,
   document.getElementById('form-mount')
 );
