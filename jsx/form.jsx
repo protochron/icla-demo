@@ -303,7 +303,7 @@ var IclaForm = React.createClass({
 
   render: function () {
     return (
-      <form className="form-horizontal col-md-8" action="/" method="POST">
+      <form className="form-horizontal col-md-8" action="/form" method="POST">
         <div className="form-group">
           <label className="col-sm-2 control-label">Name</label>
           <div className="col-sm-10">

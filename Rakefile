@@ -13,19 +13,20 @@ task :initialize_db do
     db.execute <<-SQL
     create table pending (
       uuid text primary key,
-      email varchar
+      email varchar unique
     );
     SQL
 
     db.execute <<-SQL
       create table icla (
         id integer primary key autoincrement,
-        email varchar,
+        email varchar unique,
         name varchar,
         preferred_name varchar,
-        addresss text,
+        address text,
+        country varchar,
         telephone varchar,
-        signed datetime
+        signed timestamp default (strftime('%s', 'now'))
       );
     SQL
   end

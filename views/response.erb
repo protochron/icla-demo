@@ -1,5 +1,10 @@
+<% if error %>
+<div class="alert alert-danger">
+  <p>There was an error processing your request. The email you entered has previously been used to file an ICLA. Please email <a href="mailto:#">secretary@apache.org</a> if you think this is in error.</p>
+</div>
+<% else %>
 <div class="alert alert-success">
   <p>Thank you for submitting your ICLA request. An email should arrive in you inbox shortly with a link to confirm that you agree to the terms and conditions.</p>
   <a href="/<%= uuid %>">Debug: Click here to skip the whole validation part</a>
-
 </div>
+<% end %>
