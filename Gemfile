@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'sinatra'
+gem 'redcarpet'
 gem 'multi_json'
 gem 'oj'
 gem 'puma'
