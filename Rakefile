@@ -26,8 +26,8 @@ task :initialize_db do
         address text,
         country varchar,
         telephone varchar,
-        icla_hash varchar
-        signed timestamp default (strftime('%s', 'now')),
+        icla_hash varchar,
+        signed timestamp default (strftime('%s', 'now'))
       );
     SQL
   end
