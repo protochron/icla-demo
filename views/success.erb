@@ -1,7 +1,15 @@
+<%
+    require 'sqlite3'
+    db = SQLite3::Database.new(DB_NAME)
+    record =
+%>
 <div class="alert alert-success">
   <p>You have sucessfully submitted your ICLA! A copy of the information you have provided has been sent to your account</p>
 
   <p>
-    DEBUG: Need to include full text of ICLA along with values here.
+    DEBUG:
+    <% db.execute('select * from icla order by id desc limit 1') do |row| %>
+      <%= row %>
+    <% end %>
   </p>
 </div>
