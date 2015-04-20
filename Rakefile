@@ -3,7 +3,7 @@ require 'sqlite3'
 task :bootstrap do
   puts `npm install`
   puts `bower install --allow-root`
-  puts `jsx jsx public/js`
+  puts `jsx --extension jsx jsx public/js`
 end
 
 task :initialize_db do
